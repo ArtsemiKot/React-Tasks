@@ -34,6 +34,7 @@ function Home() {
         <p><Link to ='/task28'>Задача№28</Link></p>
         <p><Link to ='/task29'>Задача№29</Link></p>
         <p><Link to ='/task30'>Задача№30</Link></p>
+        <p><Link to ='/task31'>Задача№31</Link></p>
         </>);
 }
 

@@ -10,7 +10,7 @@ function Task30() {
         setInp({ ...inp, [e.target.name]: e.target.value })
     }
 
-    function isData() {
+    function chek() {
         console.log(inp);
     }
     return (
@@ -20,7 +20,7 @@ function Task30() {
                 name: '', surname: ''. Проверить значения 2 input на пустоту. Структура state:</p>
             <input name='name' onChange={checkData}></input>
             <input name='surname' onChange={checkData}></input>
-            <button onClick={isData}>Click me</button>
+            <button onClick={chek}>Click me</button>
             <p><Link to='/'>Главная страница</Link></p>
         </>
     );
