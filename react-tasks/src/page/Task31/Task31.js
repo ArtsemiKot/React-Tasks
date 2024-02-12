@@ -16,7 +16,7 @@ function Task31() {
     return (
         <>
             <h1>Задача№31</h1>
-            <p>апрос к API с использованием useState и useEffect: Создайте компонент, который выполняет запрос к
+            <p>Запрос к API с использованием useState и useEffect: Создайте компонент, который выполняет запрос к
                 API https://api.ipify.org/?format=json и отображает полученные данные в заголовок.</p>
             <h1>{Object.entries(res)}</h1>
             <h1>{console.log(Object.entries(res))}</h1>
