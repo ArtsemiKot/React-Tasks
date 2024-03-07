@@ -90,6 +90,9 @@ import { task81Context } from "./Context/Context";
 import { task82Context } from "./Context/Context";
 import { task83Context } from "./Context/Context";
 import { useState } from "react";
+import Task86 from "./page/Task86/Task86";
+import Task87 from "./page/Task87/Task87";
+import Task88 from "./page/Task88/Task88";
 
 function App() {
 
@@ -109,8 +112,10 @@ function App() {
     speedWind: '12м/c'
   }
 
-  const [colorTeme, setColorTeme] = useState('Белый')
-  const backColor = { colorTeme, setColorTeme }
+  const [flag, setFlag] = useState(false);
+  const [backgroundWhite, setBackgroundWhite] = useState('white');
+  const [backgroundBlack, setBackgroundBlack] = useState('black');
+
   return (
     <>
       <task80Context.Provider value={obj}>
@@ -196,6 +201,11 @@ function App() {
           <Route path='/task78' element={<Task78></Task78>}></Route>
           <Route path='/task79' element={<Task79></Task79>}></Route>
           <Route path='/task80' element={<Task80></Task80>}></Route>
+          <Route path='/task84' element={<Task84></Task84>}></Route>
+          <Route path='/task85' element={<Task85></Task85>}></Route>
+          <Route path='/task86' element={<Task86></Task86>}></Route>
+          <Route path='/task87' element={<Task87></Task87>}></Route>
+          <Route path='/task88' element={<Task88></Task88>}></Route>
         </Routes>
       </task80Context.Provider>
       <task81Context.Provider value={languages}>
@@ -208,14 +218,11 @@ function App() {
           <Route path='/task82' element={<Task82></Task82>}></Route>
         </Routes>
       </task82Context.Provider>
-      <task83Context.Provider value={backColor}>
+      <task83Context.Provider value={{ flag, setFlag, backgroundWhite, setBackgroundWhite, backgroundBlack, setBackgroundBlack}}>
         <Routes>
           <Route path='/task83' element={<Task83></Task83>}></Route>
         </Routes>
       </task83Context.Provider>
-
-      {/* <Route path='/task84' element={<Task84></Task84>}></Route>
-      <Route path='/task85' element={<Task85></Task85>}></Route> */}
     </>
   );
 }
