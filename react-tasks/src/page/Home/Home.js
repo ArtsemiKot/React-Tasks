@@ -93,6 +93,8 @@ function Home() {
             <p><Link to='/task86'>Задача№86</Link></p>
             <p><Link to='/task87'>Задача№87</Link></p>
             <p><Link to='/task88'>Задача№88</Link></p>
+            <p><Link to='/task89'>Задача№89</Link></p>
+            <p><Link to='/task90'>Задача№90</Link></p>
         </>);
 }
 
